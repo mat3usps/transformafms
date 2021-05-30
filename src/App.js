@@ -1,4 +1,4 @@
-import { Container, Typography } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { Switch, Route } from "react-router-dom";
 import {
   createMuiTheme,
