@@ -1,5 +1,6 @@
 import { Typography, Box, Button } from "@material-ui/core";
 import StyledParagraph from "../components/StyledParagraph";
+import { Link } from "react-router-dom";
 
 import Logo from "../assets/images/logo-clube-da-preta.png";
 
@@ -8,8 +9,8 @@ import React from "react";
 const ClubeDaPreta = () => {
   return (
     <Box>
-      <Box>
-        <img src={Logo} alt="Empresa parceira" />
+      <Box display="flex" justifyContent="center">
+        <img src={Logo} alt="Empresa parceira" style={{ width: "300px" }} />
       </Box>
 
       <Box>
@@ -37,6 +38,11 @@ const ClubeDaPreta = () => {
       </Box>
 
       <Box fullWidth display="flex" justifyContent="center" marginTop="15px">
+        <Box marginRight="10px">
+          <Button variant="outlined" component={Link} to="/" marg>
+            Voltar
+          </Button>
+        </Box>
         <Button variant="outlined">
           <a
             href="https://www.clubedapreta.com.br/"

@@ -1,15 +1,15 @@
 import { Typography, Box, Button } from "@material-ui/core";
-import StyledParagraph from "../components/StyledParagraph";
-
-import Logo from "../assets/images/logo-firgun.png";
-
 import React from "react";
+import { Link } from "react-router-dom";
+
+import StyledParagraph from "../components/StyledParagraph";
+import Logo from "../assets/images/logo-firgun.png";
 
 const Firgun = () => {
   return (
     <Box>
-      <Box>
-        <img src={Logo} alt="Empresa parceira" />
+      <Box display="flex" justifyContent="center">
+        <img src={Logo} alt="Empresa parceira" style={{ width: "300px" }} />
       </Box>
 
       <Box>
@@ -32,6 +32,11 @@ const Firgun = () => {
       </Box>
 
       <Box fullWidth display="flex" justifyContent="center" marginTop="15px">
+        <Box marginRight="10px">
+          <Button variant="outlined" component={Link} to="/" marg>
+            Voltar
+          </Button>
+        </Box>
         <Button variant="outlined">
           <a
             href="https://www.firgun.com.br/"

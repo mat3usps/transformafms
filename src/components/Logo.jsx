@@ -6,7 +6,6 @@ import LogoImage from "../assets/images/logo.jpg";
 
 const styles = {
   logo: {
-    margin: 5,
     height: 50,
     borderRadius: "7px",
     objectFit: "cover",

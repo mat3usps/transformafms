@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core";
+import { Container, Typography } from "@material-ui/core";
 import { Switch, Route } from "react-router-dom";
 import {
   createMuiTheme,
@@ -9,10 +9,12 @@ import {
 import React from "react";
 
 import StyledAppBar from "./components/StyledAppBar";
+import BottomLine from "./components/BottomLine";
 import Home from "./pages/Home";
 import ClubedaPreta from "./pages/ClubeDaPreta";
 import EmpreendeAi from "./pages/EmpreendeAi";
 import Firgun from "./pages/Firgun";
+import Contato from "./pages/Contato";
 
 const theme = createMuiTheme({
   typography: {
@@ -47,8 +49,12 @@ const App = () => {
           <Route exact path="/firgun">
             <Firgun />
           </Route>
+          <Route exact path="/contato">
+            <Contato />
+          </Route>
         </Switch>
       </Container>
+      <BottomLine />
     </ThemeProvider>
   );
 };

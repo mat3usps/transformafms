@@ -1,15 +1,15 @@
 import { Typography, Box, Button } from "@material-ui/core";
-import StyledParagraph from "../components/StyledParagraph";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import Logo from "../assets/images/logo-empreende-ai.png";
-
-import React from "react";
+import StyledParagraph from "../components/StyledParagraph";
 
 const EmpreendeAi = () => {
   return (
     <Box>
-      <Box>
-        <img src={Logo} alt="Empresa parceira" />
+      <Box display="flex" justifyContent="center">
+        <img src={Logo} alt="Empresa parceira" style={{ width: "300px" }} />
       </Box>
 
       <Box>
@@ -38,6 +38,11 @@ const EmpreendeAi = () => {
       </Box>
 
       <Box fullWidth display="flex" justifyContent="center" marginTop="15px">
+        <Box marginRight="10px">
+          <Button variant="outlined" component={Link} to="/" marg>
+            Voltar
+          </Button>
+        </Box>
         <Button variant="outlined">
           <a
             href="https://empreendeai.com.br/"

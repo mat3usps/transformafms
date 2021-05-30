@@ -1,5 +1,4 @@
 import { Typography, Box, Button } from "@material-ui/core";
-import MailIcon from "@material-ui/icons/Mail";
 
 import React from "react";
 
@@ -61,7 +60,7 @@ const Home = () => {
 
       <StyledParagraph>
         Fazemos parte do grupo de pessoas que acredita que se pode fazer mais
-        pelo equilíbrio social no Brasil de forma sustentável e responsável
+        pelo equilíbrio social no Brasil de forma sustentável e responsável.
       </StyledParagraph>
       <StyledParagraph>
         Trabalhando na periferia e com empreendedores, percebemos que muitos têm
@@ -78,20 +77,7 @@ const Home = () => {
       </StyledParagraph>
 
       <Box display="flex" justifyContent="center" fullWidth>
-        <img src={Graphic} alt="Gráfico" style={{ width: "400px" }} />
-      </Box>
-
-      <Box display="flex" justifyContent="center">
-        <StyledBox>
-          <Button variant="outlined">
-            <a href="mailto:fabiocamisasca@transformamicrocredito.com">
-              <MailIcon style={{ color: "#494843" }} />
-              <Typography style={{ textDecoration: "none" }}>
-                Fábio Camisasca
-              </Typography>
-            </a>
-          </Button>
-        </StyledBox>
+        <img src={Graphic} alt="Gráfico" style={{ width: "300px" }} />
       </Box>
     </Box>
   );
